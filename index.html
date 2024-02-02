@@ -1,16 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 
-    <title>Welcome</title>
-  </head>
+	<meta
+		name="viewport"
+		content="width=device-width,height=device-height,initial-scale=1"
+	>
+	<meta
+		name="description"
+		content="A sample vanilla HTML template from 'step two' of building a web page using progressive enhancement. Layout will be created during step 3."
+	>
+	<meta
+		name="keywords"
+		content="introduction,prices,free,enterprise,features,projects,resources"
+	>
 
-  <body>
+	<link
+		rel="preconnect"
+		href="https://fonts.googleapis.com"
+	>
+	<link
+		rel="preconnect"
+		href="https://fonts.gstatic.com"
+		crossorigin
+	>
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+		media="screen,print"
+	>
+	<link
+		rel="stylesheet"
+		href="styles.css"
+		media="screen"
+	>
 
-    <header>
-      <h1>Coming soon</h1>
-      <header>
+	<title>
+		SITE TITLE
+	</title>
 
-  </body>
-</html>
+</head><body>
+
+	<div id="fauxBody">
+
+		<header id="top">
+			<h1><a href="/">SITE TITLE</a></h1>
+			<button type="button" id="mainMenuOpen" hidden></button>
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="#">Tutorials</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#signin">Sign In</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+
+			<div class="hero" style="--heroBg:url(https://source.unsplash.com/KMn4VEeEPR8/1920x1280)">
+				<section id="introduction">
+					<h2>Introduction</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id nisl ultricies, accumsan tortor non, molestie nisi. Mauris sed porta augue. Ut ornare velit consectetur dui fermentum, non faucibus mauris feugiat. Phasellus dictum, massa non laoreet sagittis, erat augue pretium enim, vitae mattis quam risus eget nisl.
+					</p>
+					<ul class="actions">
+						<li class="featured"><a href="#">Get Started</a></li>
+						<li><a href="#">Learn More</a></li>
+					</ul>
+				</section>
+			<!-- .hero --></div>
+
+			<section id="prices" class="priceCards">
+				<h2>Prices</h2>
+				<p>
+					Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam vehicula neque sed libero suscipit ultricies. Pellentesque sit amet nisi et dui hendrerit laoreet at et urna. Nunc ac ultricies dui.
+				</p>
+				<div class="cards">
+					<article>
+						<h3>Free</h3>
+						<ul>
+							<li><strong>$0<span>/mo</span></strong></li>
+							<li>1 User Account</li>
+							<li>2gb storage</li>
+							<li>100mbps Throughput</li>
+							<li>E-mail Support Only</li>
+						</ul>
+						<a href="#" class="featured">Sign Up Now!</a>
+					</article><article>
+						<h3>Standard</h3>
+						<ul>
+							<li><strong>$15<span>/mo</span></strong></li>
+							<li>10 User Accounts</li>
+							<li>100gb Storage</li>
+							<li>Up to 1gbps Throughput<br><em>(based on availability)</em></li>
+							<li>Priority E-mail And Phone Support</li>
+						</ul>
+						<a href="#">Order Now</a>
+					</article><article>
+						<h3>Enterprise</h3>
+						<ul>
+							<li><strong>$50<span>/mo</span></strong></li>
+							<li>25 User Accounts</li>
+							<li>250gb Storage</li>
+							<li>Up to 10gbps throughput,<br><em>5gbps guaranteed</em></li>
+							<li>Priority E-mail And Phone Support</li>
+						</ul>
+						<a href="#">Contact Us</a>
+					</article>
+				<!-- .cards --></div>
+			<!-- #prices.priceCards --></section>
+
+			<section id="staff" class="avatarCards">
+				<h2>Our Staff</h2>
+				<p>
+					Sed pellentesque sed nulla a malesuada. Sed vitae maximus sem. Vivamus pharetra tincidunt lobortis. Praesent ut mauris leo. Nam justo ex, porta ac massa sed, fringilla mattis quam. Morbi congue arcu eget faucibus aliquam.
+				</p>
+				<div class="cards">
+					<article>
+						<img src="../images/avatar1.jpg" alt="Jimbo Jones' avatar">
+						<h3>
+							Jimbo Jones<br>
+							<small>Founder</small>
+						</h3>
+						<p>
+							Suspendisse sit amet condimentum nisl. Ut vel turpis nec ipsum aliquam consequat egestas ullamcorper felis
+						</p>
+					</article><article>
+						<img src="../images/avatar2.jpg" alt="Jessica Jones' vatar">
+						<h3>
+							Jessica Jones<br>
+							<small>Agent</small>
+						</h3>
+						<p>
+							Donec dignissim, augue non blandit pretium, sapien lacus sollicitudin enim, eget gravida ligula dolor a elit.
+						</p>
+					</article><article>
+						<img src="../images/avatar3.jpg" alt="Too Wong Fu's avatar">
+						<h3>
+							Too Wong Fu<br>
+							<small>Promoter</small>
+						</h3>
+						<p>
+							Thanks for Everything, Julie Newmar
+						</p>
+					</article>
+				<!-- .cards --></div>
+			<!-- #staff.avatarCards --></section>
+
+		</main>
+
+		<footer>
+
+			<section>
+				<hr>
+				&copy; Your Company
+			</section>
+
+			<section>
+				<h2>Features</h2>
+				<ul>
+					<li><a href="#">Some Stuff</a></li>
+					<li><a href="#">Random Junk</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Something Else</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Resources</h2>
+				<ul>
+					<li><a href="#">Dev. Tools</a></li>
+					<li><a href="#">Tutorials</a></li>
+					<li><a href="#">Libraries</a></li>
+					<li><a href="#">References</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>About</h2>
+				<ul>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Locations</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+				</ul>
+			</section>
+
+		</footer>
+		
+	<!-- #fauxBody --></div>
+
+	<form id="contact" method="post" class="modal">
+		<a href="#" class="modalClose" hidden></a>
+		<div>
+			<h2>Contact Us</h2>
+			<a href="#" class="modalClose" hidden></a>
+			<fieldset>
+				<label>
+					Your Name<br>
+					<input type="text" name="name" required><br>
+				</label><label>
+					E-Mail Address<br>
+					<input type="email" name="email" required><br>
+				</label><label>
+					Phone Number<br>
+					<input type="text" name="phone"><br>
+				</label><label>
+					Subject<br>
+					<input type="text" name="subject" required><br>
+				</label><label>
+					Message<br>
+					<textarea name="message" required></textarea><br>
+				</label>
+			</fieldset>
+			<footer>
+				<button>Submit</button>
+			</footer>
+		</div>
+	</form>
+
+	<form id="signin" method="post" class="modal">
+		<a href="#" class="modalClose" hidden></a>
+		<div>
+			<h2>Login</h2>
+			<a href="#" class="modalClose" hidden></a>
+			<fieldset>
+				<label>
+					Username<br>
+					<input type="text" name="username" required><br>
+				</label><label>
+					Password<br>
+					<input type="password" name="password" required><br>
+				</label><label>
+					<input type="checkbox" name="remember" value="1">
+					Remember Me<br>
+				</label>
+			</fieldset>
+			<footer>
+				<button>Submit</button>
+			</footer>
+		</div>
+	</form>
+	
+	<script src="template.js"></script>
+
+</body></html>
