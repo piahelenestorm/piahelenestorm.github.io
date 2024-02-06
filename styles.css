@@ -1,16 +1,9 @@
+
 body {
   /* variables */
 
   --color-background: #071120;
   --color-text: #CCD6F6;
-  
-  --maxWidth-constrain:64rem;
-  --maxWidth-flow:40rem;
-  --maxWidth-modal:32rem;
-  --maxWidth-modalForm:24rem;
-  --pad:clamp(0.5em, min(2vw, 4vh), 4em);
-  --borderRadius-outer:0.5em;
-  --borderRadius-inner:0.25em;
 }
 
 html,body,div,p,h1,h2,h3,h4,h5,h6,
@@ -41,8 +34,10 @@ hr {
   display:none;
 }
 
-body, button, input, table, textarea, select {
-  font:normal 1em/1.5 "poppins",arial,helvetica,sans-serif;
+body, button, input, table, textarea, select, ul {
+  font:1em "poppins",arial,helvetica,sans-serif;
+  list-style: none;
+
 }
 
 button:focus,
@@ -52,13 +47,107 @@ textarea:focus {
   outline:none;
 }
 
-#fauxBody {
-  display:flex;
-  flex-direction:column;
-  height:100%;
-  overflow:auto;
-  background:var(--color-background);
-  color:var(--color-text);
+#faux-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  background: var(--color-background);
+  color: var(--color-text);
   word-break: break-all;
-  padding: 0% 5%;
+  padding: 0vw 5vw;
 }
+
+
+
+/* ------------------------------------------------------ MENU STYLING (BEGINNING) ------------------------------------------------------*/
+.nav-main{
+  width: 100%;
+  height: fit-content;
+  position: sticky;
+  background-color: var(--color-background);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .25s ease-in-out;
+
+}
+
+.menu {
+  margin: 20px 0;
+}
+
+.menu a{
+  display: block;
+  padding: 20px;
+  color: var(--color-text);
+  text-align: center;
+}
+.menu a:visited{
+  color: var(--color-text);
+  /* text-decoration: none; */
+}
+
+.menu a:hover{
+  color: var(--color-text);
+}
+
+.menu a:active{
+  color: var(--color-text);
+}
+
+
+/* Menu Icon */
+.hamb{
+  /* cursor: pointer; */
+  float: right;
+  padding: 40px;
+}
+
+.hamb-line {
+  background:var(--color-text);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--color-text);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .50s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* ------------------------------------------------------ MENU STYLING (ENDING) ------------------------------------------------------*/
