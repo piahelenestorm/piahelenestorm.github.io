@@ -64,7 +64,6 @@ textarea:focus {
 .nav-main{
   width: 100%;
   height: fit-content;
-  position: sticky;
   background-color: var(--color-background);
   overflow: hidden;
   max-height: 0;
@@ -99,8 +98,8 @@ textarea:focus {
 /* Menu Icon */
 .hamb{
   /* cursor: pointer; */
-  float: right;
-  padding: 40px;
+  /* float: right;  */
+  padding: 2.5rem;
 }
 
 .hamb-line {
@@ -151,3 +150,65 @@ textarea:focus {
 
 
 /* ------------------------------------------------------ MENU STYLING (ENDING) ------------------------------------------------------*/
+
+
+
+@media (min-width: 62rem) {
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-main{
+    max-height: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.menu a{
+    display: block;
+    color: var(--color-text);
+}
+
+.menu a:visited {
+    display: block;
+    text-decoration: none;
+    color: var(--color-text);
+  }  
+  
+  .menu a:hover {
+    display: block;
+    color: var(--color-text);
+  }
+
+  .menu a:active {
+    display: block;
+    color: var(--color-text);
+    text-decoration: underline;
+  } 
+
+
+  li.active a:before,
+a:hover:before {
+visibility: visible;
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+}
+
+
+.hamb{
+    display: none;
+}
+
+}
+
