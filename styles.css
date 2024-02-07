@@ -87,29 +87,33 @@ a:active {
 /* ------------------------------------------------------ Header Styling (BEGINNING) ------------------------------------------------------*/
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+  width: 100%;
 }
 
 .logo {
   width:fit-content; /* making sure our content breaks when appropiate */
   overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-/* Menu styling */
 .nav {
   width: fit-content; /* making sure our content breaks when appropiate */
   overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
 }
+
 .menu {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   gap: 0.8rem;
 }
+
 .menu-link {
   width: fit-content; /* making sure our content breaks when appropiate */
   overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
@@ -125,35 +129,36 @@ a:active {
   /* ------------------------------------------------------ Header Styling (BEGINNING) ------------------------------------------------------*/
   .header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 100%;
   }
   
   .logo {
-    width:fit-content;
-    overflow-wrap: anywhere;
-    font-size: 3rem;
+    width: fit-content; /* making sure our content breaks when appropiate */
+    overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+    font-size: 2rem;
   }
   
   .nav {
-    width:fit-content;
-    overflow-wrap: anywhere;
+    width: fit-content; /* making sure our content breaks when appropiate */
+    overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
   }
   
   .menu {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    overflow-wrap:break-word;
-    width: 100%;
+    flex-wrap: wrap; 
     gap: 0.8rem;
   }
   
   .menu-link {
-    width:fit-content;
-    overflow-wrap: anywhere;
+    width: fit-content; /* making sure our content breaks when appropiate */
+    overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
     text-align: right;
   }
 
