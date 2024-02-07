@@ -68,11 +68,8 @@ button,
 input,
 table,
 textarea,
-select,
-ul {
+select {
   font: 1em "poppins", arial, helvetica, sans-serif;
-  list-style: none;
-
 }
 
 button:focus,
@@ -90,170 +87,108 @@ textarea:focus {
   background: var(--color-background);
   color: var(--color-text);
   word-break: break-all;
-  padding: 0vw 5vw;
+  padding: 0vw 4vw;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------------------------------------------------------ Link Styling (BEGINNING) ------------------------------------------------------*/
+a {
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: underline;
+}
+a:active {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 
-
-/* ------------------------------------------------------ MENU STYLING (BEGINNING) ------------------------------------------------------*/
-.nav-main {
-  width: 100%;
-  height: fit-content;
-  background-color: var(--color-background);
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height .25s ease-in-out;
-
+/* ------------------------------------------------------ Header Styling (BEGINNING) ------------------------------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
+.logo {
+  width:fit-content; /* making sure our content breaks when appropiate */
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+  font-size: 3rem;
+}
+
+/* Menu styling */
+.nav {
+  width: fit-content; /* making sure our content breaks when appropiate */
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+}
 .menu {
-  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
-
-.menu a {
-  display: block;
-  padding: 20px;
-  color: var(--color-text);
-  text-align: center;
-}
-
-.menu a:visited {
-  color: var(--color-text);
-  /* text-decoration: none; */
-}
-
-.menu a:hover {
-  color: var(--color-text);
-}
-
-.menu a:active {
-  color: var(--color-text);
+.menu-link {
+  width: fit-content; /* making sure our content breaks when appropiate */
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+  text-align: right;
 }
 
 
-/* Menu Icon */
-.hamb {
-  /* cursor: pointer; */
-  /* float: right;  */
-  padding: 2.5rem;
-}
-
-.hamb-line {
-  background: var(--color-text);
-  display: block;
-  height: 2px;
-  position: relative;
-  width: 24px;
-
-}
-
-/* Style span tag */
-
-.hamb-line::before,
-.hamb-line::after {
-  background: var(--color-text);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .50s ease-out;
-  width: 100%;
-}
-
-.hamb-line::before {
-  top: 5px;
-}
-
-.hamb-line::after {
-  top: -5px;
-}
-
-.side-menu {
-  display: none;
-}
-
-/* Hide checkbox */
-
-/* Toggle menu icon */
-.side-menu:checked~nav {
-  max-height: 100%;
-}
-
-.side-menu:checked~.hamb .hamb-line {
-  background: transparent;
-}
-
-.side-menu:checked~.hamb .hamb-line::before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.side-menu:checked~.hamb .hamb-line::after {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-
-/* ------------------------------------------------------ MENU STYLING (ENDING) ------------------------------------------------------*/
 
 
 
 @media (min-width: 62rem) {
 
-  .main-header {
+  /* ------------------------------------------------------ Header Styling (BEGINNING) ------------------------------------------------------*/
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
-
-  .nav-main {
-    max-height: none;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
+  
+  .logo {
+    width:fit-content;
+    overflow-wrap: anywhere;
+    font-size: 3rem;
   }
-
+  
+  .nav {
+    width:fit-content;
+    overflow-wrap: anywhere;
+  }
+  
   .menu {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    overflow-wrap:break-word;
+    width: 100%;
+    gap: 0.8rem;
   }
-
-
-  .menu a {
-    display: block;
-    color: var(--color-text);
-  }
-
-  .menu a:visited {
-    display: block;
-    text-decoration: none;
-    color: var(--color-text);
-  }
-
-  .menu a:hover {
-    display: block;
-    color: var(--color-text);
-    font-size: 1.2rem;
-  }
-
-  .menu a:active {
-    display: block;
-    color: var(--color-text);
-    text-decoration: underline;
-  }
-
-
-  li.active a:before,
-  a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-
-
-  .hamb {
-    display: none;
+  
+  .menu-link {
+    width:fit-content;
+    overflow-wrap: anywhere;
+    text-align: right;
   }
 
 }
