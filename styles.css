@@ -57,7 +57,7 @@ textarea:focus {
   overflow: auto;
   background: var(--color-background);
   color: var(--color-text);
-  word-break: break-all;
+  overflow-wrap: break-word;
   padding: 0vw 4vw;
 }
 
