@@ -54,7 +54,7 @@ object {
 
 button,
 label {
-    cursor: pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="%23092653" fill="%23092653" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
 html,
@@ -149,7 +149,7 @@ h1 {
     width: fit-content;
     font-size: 1.1rem;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h1:hover {
@@ -175,7 +175,7 @@ h1:hover {
     width: fit-content;
     font-size: 1.1rem;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .nav {
@@ -185,7 +185,7 @@ h1:hover {
 /* ------------------------------------------------------ Main Styling (BEGINNING) ------------------------------------------------------*/
 
 .main-wrapper {
-    padding: 0rem 4vw;
+    padding: 3rem 4vw;
 }
 
 .hero-section {
@@ -193,20 +193,7 @@ h1:hover {
 }
 
 .hero-text {
-    padding-top: 2rem;
     font-size: 1.1rem;
-}
-
-.case-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Playfair Display", serif;
-}
-
-.video-healthy {
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
 }
 
 
@@ -229,9 +216,9 @@ h1:hover {
 
 .case-intro-title {
     letter-spacing: 2px;
-    font-weight: 400;
     font-size: 1.2rem;
     width: fit-content;
+    font-weight: 600;
 }
 
 .case-intro-text {
@@ -264,6 +251,90 @@ h1:hover {
 
 .case-link {
     text-decoration: underline;
+}
+
+/* ------------------------------------------------------------- CASE PAGES --------------------------------------------------------------------*/
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.case-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.case-hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.case-title {
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    width: fit-content;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.case-description {
+    width: fit-content;
+    font-size: 1.1rem;
+}
+
+.video-healthy {
+    max-width: 250px;
+    height: auto;
+    border-radius: 15px;
+}
+
+h3 {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    width: fit-content;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.bold-text {
+    font-weight: 500;
+}
+
+.view-prototype-link{
+    padding: 1rem 2rem;
+    background-color: #D3D3D3;
+    border: none;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+
+.title-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+@media (min-width: 58.75rem) {
+    .case-text-wrapper{
+        max-width: 60%;
+    }
+
+    .case-hero-wrapper {
+        gap: 8rem;
+    }
 }
 
 /* ------------------------------------------------------ Footer Styling (BEGINNING) ------------------------------------------------------*/
@@ -374,7 +445,7 @@ h1:hover {
     }
 }
 
-@media (min-width: 47rem) {
+@media (min-width: 56rem) {
     .case-container {
         display: flex;
         flex-direction: column;
