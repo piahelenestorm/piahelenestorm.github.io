@@ -252,6 +252,13 @@ h1:hover {
 
 /* ------------------------------------------------------------- CASE PAGES --------------------------------------------------------------------*/
 
+.case-img-healthy {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -266,6 +273,7 @@ h1:hover {
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .case-hero-wrapper {
     display: flex;
     flex-direction: row;
@@ -276,8 +284,8 @@ h1:hover {
 }
 
 .case-title {
-    letter-spacing: 2px;
-    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+    font-size: 1.6rem;
     width: fit-content;
     font-weight: 700;
     overflow-wrap: anywhere;
@@ -296,7 +304,7 @@ h1:hover {
 
 h3 {
     letter-spacing: 1px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: fit-content;
     font-weight: 700;
     overflow-wrap: anywhere;
@@ -324,7 +332,7 @@ h3 {
     gap: 0.5rem;
 }
 
-@media (min-width: 58.75rem) {
+@media (min-width: 64.375rem) {
     .case-text-wrapper{
         max-width: 60%;
     }
@@ -332,6 +340,11 @@ h3 {
     .case-hero-wrapper {
         gap: 8rem;
     }
+
+    .case-img-healthy {
+        display: none;
+    }
+
 }
 
 /* ------------------------------------------------------ Footer Styling (BEGINNING) ------------------------------------------------------*/
