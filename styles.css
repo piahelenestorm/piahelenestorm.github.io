@@ -193,6 +193,11 @@ h1:hover {
     font-size: 1.1rem;
 }
 
+.hero-text2 {
+    font-size: 1.6rem;
+    padding: 2rem 0;
+}
+
 
 /* ------------------------------------------------------ Section Styling (BEGINNING) ------------------------------------------------------*/
 .cases-section {
@@ -280,7 +285,7 @@ h1:hover {
     width: 100%;
     flex-wrap: wrap;
     gap: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .case-title {
