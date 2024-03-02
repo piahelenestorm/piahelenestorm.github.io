@@ -195,7 +195,7 @@ h1:hover {
 
 .hero-text2 {
     font-size: 1.6rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 
@@ -234,7 +234,7 @@ h1:hover {
 }
 
 .case-img {
-    object-fit: cover;
+
     max-width: 100%;
     height: 500px;
 }
@@ -329,11 +329,42 @@ h3 {
     gap: 0.5rem;
 }
 
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.datavisualizing {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
 @media (min-width: 64.375rem) {
 
 
     .case-img-healthy {
         display: none;
+    }
+
+
+
+    .img-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1%;
+    }
+    
+    .datavisualizing {
+        max-width: 49%;
+        height: auto;
+        object-fit: cover;
     }
 
 }
