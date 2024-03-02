@@ -182,11 +182,29 @@ h1:hover {
 /* ------------------------------------------------------ Main Styling (BEGINNING) ------------------------------------------------------*/
 
 .main-wrapper {
-    padding: 3rem 4vw;
+    padding: 3rem 0;
 }
 
 .hero-section {
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-section-wrapper {
+    padding: 0 4vw;
+
+}
+
+.user-research-wrapper {
+    background-color: #F2EDE8;
+    padding-top: 2rem;
+}
+
+.user-research-padding {
+    padding: 0 4vw;
 }
 
 .hero-text {
@@ -264,12 +282,6 @@ h1:hover {
     margin-bottom: 1rem;
 }
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
 
 .case-hero-wrapper {
     display: flex;
@@ -306,6 +318,7 @@ h3 {
     font-weight: 700;
     overflow-wrap: anywhere;
 }
+
 
 .bold-text {
     font-weight: 500;
@@ -468,7 +481,7 @@ h3 {
     }
 
     .main-wrapper {
-        padding: 2rem 4vw;
+        padding: 2rem 0;
     }
 
     .hero-text {
