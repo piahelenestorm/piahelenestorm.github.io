@@ -6,56 +6,25 @@ body {
     --hover-text: linear-gradient(90deg, rgba(9, 38, 83, 1) 27%, rgba(115, 0, 120, 1) 96%);
 }
 
-html,
-body,
-div,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-form,
-fieldset,
-caption,
-table,
-tr,
-td,
-th,
-address,
-blockquote,
-img {
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, caption, table, tr, td, th, address, blockquote, img {
     margin: 0;
     padding: 0;
 }
 
-img,
-fieldset,
-object {
+img, fieldset, object {
     border: none;
 }
 
-*,
-*:after,
-*:before {
+*, *:after, *:before {
     flex: 1 0 auto;
     /* safari bugfix */
     box-sizing: border-box;
 }
 
-button,
-label {
+button, label {
 cursor: pointer;}
 
-html,
-body {
+html, body {
     background: var(--color-background);
     color: var(--color-text);
 }
@@ -64,12 +33,7 @@ hr {
     display: none;
 }
 
-body,
-button,
-input,
-table,
-textarea,
-select {
+body, button, input, table, textarea, select {
     font-size: 1em;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
@@ -81,10 +45,7 @@ textarea {
     overflow: auto;
 }
 
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
+button:focus, input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
@@ -132,14 +93,7 @@ a:active {
     ;
 }
 
-/* ------------------------------------------------------ Header Styling (BEGINNING) ------------------------------------------------------*/
-.header {
-    width: 100%;
-    padding-top: 2rem;
-    padding-right: 4vw;
-    padding-left: 4vw;
-}
-
+/* -------------------------------------------------------------------- Text Styling  --------------------------------------------------------------------------*/
 h1 {
     overflow-wrap: anywhere;
     /* making sure our content breaks when appropiate */
@@ -148,14 +102,12 @@ h1 {
     letter-spacing: 2px;
     font-weight: 500;
 }
-
 h1:hover {
     background-image: var(--hover-text);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
-
 .about-me-title {
     overflow-wrap: anywhere;
     margin-top: 2rem;
@@ -165,7 +117,6 @@ h1:hover {
     letter-spacing: 2px;
     font-weight: 300;
 }
-
 .logo {
     overflow-wrap: anywhere;
     /* making sure our content breaks when appropiate */
@@ -174,12 +125,76 @@ h1:hover {
     letter-spacing: 2px;
     font-weight: 500;
 }
+.hero-text {
+    font-size: 1.1rem;
+}
+.hero-text2 {
+    font-size: 1.6rem;
+    padding: 3rem 0;
+}
+.case-title {
+    letter-spacing: 1.5px;
+    font-size: 1.6rem;
+    width: fit-content;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+.case-description {
+    width: 100%;
+    font-size: 1.1rem;
+}
+h3 {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    width: fit-content;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+.case-intro-title {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    width: fit-content;
+    font-weight: 600;
+}
+.case-intro-text {
+    font-size: 1.1rem;
+    width: fit-content;
+}
+/* ------------------------------------------------------------------ Media Styling ------------------------------------------------------------------------*/
+.img-case-wrapper {
+    display: flex;
+}
+.case-img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 500px;
+}
+.case-img-healthy {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.img-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
 
+/* ------------------------------------------------------------------ Header Styling ------------------------------------------------------------------------*/
+.header {
+    width: 100%;
+    padding-top: 2rem;
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
 .nav {
     display: none;
 }
 
-/* ------------------------------------------------------ Main Styling (BEGINNING) ------------------------------------------------------*/
+/* --------------------------------------------------------------------- Main Styling -------------------------------------------------------------------------*/
 
 .main-wrapper {
     padding: 3rem 0;
@@ -200,29 +215,15 @@ h1:hover {
 
 .hero-section-wrapper {
     padding: 0 4vw;
-
 }
-
 .user-research-wrapper {
     background-color: #F2EDE8;
     padding-top: 3rem;
 }
-
 .user-research-padding {
     padding: 0 4vw;
 }
 
-.hero-text {
-    font-size: 1.1rem;
-}
-
-.hero-text2 {
-    font-size: 1.6rem;
-    padding: 3rem 0;
-}
-
-
-/* ------------------------------------------------------ Section Styling (BEGINNING) ------------------------------------------------------*/
 .cases-section {
     display: flex;
     flex-direction: row;
@@ -238,30 +239,6 @@ h1:hover {
     width: 99%;
     padding-bottom: 1rem;
 }
-
-.case-intro-title {
-    letter-spacing: 2px;
-    font-size: 1.2rem;
-    width: fit-content;
-    font-weight: 600;
-}
-
-.case-intro-text {
-    font-size: 1.1rem;
-    width: fit-content;
-}
-
-.img-case-wrapper {
-    display: flex;
-
-}
-
-.case-img {
-    object-fit: cover;
-    max-width: 100%;
-    height: 500px;
-}
-
 .case-wrapper {
     /* making sure our content breaks when appropiate */
     overflow-wrap: anywhere;
@@ -280,14 +257,6 @@ h1:hover {
 
 /* ------------------------------------------------------------- CASE PAGES --------------------------------------------------------------------*/
 
-.case-img-healthy {
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-
 .case-hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -297,31 +266,17 @@ h1:hover {
     margin-bottom: 3rem;
 }
 
-.case-title {
-    letter-spacing: 1.5px;
-    font-size: 1.6rem;
-    width: fit-content;
-    font-weight: 700;
-    overflow-wrap: anywhere;
-}
-
-.case-description {
-    width: 100%;
-    font-size: 1.1rem;
-}
-
 .video-healthy {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
 }
+.padding {
+    margin-top: 1.5rem;
+}
 
-h3 {
-    letter-spacing: 1px;
-    font-size: 1.3rem;
-    width: fit-content;
-    font-weight: 700;
-    overflow-wrap: anywhere;
+.padding2 {
+    margin-top: 3.5rem;
 }
 
 
@@ -336,14 +291,6 @@ h3 {
     gap: 0.5rem;
 }
 
-.img-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-}
-
 .datavisualizing {
     max-width: 100%;
     height: auto;
@@ -352,14 +299,9 @@ h3 {
 
 
 @media (min-width: 64.375rem) {
-
-
     .case-img-healthy {
         display: none;
     }
-
-
-
     .img-wrapper {
         display: flex;
         flex-direction: row;
@@ -367,13 +309,11 @@ h3 {
         align-items: center;
         gap: 1%;
     }
-    
     .datavisualizing {
         max-width: 49%;
         height: auto;
         object-fit: cover;
     }
-
 }
 
 /* ------------------------------------------------------ Footer Styling (BEGINNING) ------------------------------------------------------*/
@@ -389,7 +329,6 @@ h3 {
     border: solid 1px #242424;
     text-align: center;
     max-width: 200px;
-
 }
 .footer-wrapper {
     display: flex;
@@ -397,26 +336,22 @@ h3 {
     gap: 3rem;
     padding: 2rem 4vw;
 }
-
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-
 .contact {
     display: inline-block;
     width: 100%;
     text-align: center;
 }
-
 .footer-wrapper>section {
     width: fit-content;
     /* making sure our content breaks when appropiate */
     overflow-wrap: anywhere;
     /* making sure our content breaks when appropiate */
 }
-
 .flex-wrapper {
     display: flex;
     width: 100%;
@@ -429,7 +364,6 @@ h3 {
     margin: 0 auto;
     gap: 0.5rem;
 }
-
 .flex-wrapper>li {
     width: fit-content;
     /* making sure our content breaks when appropiate */
@@ -437,7 +371,6 @@ h3 {
     /* making sure our content breaks when appropiate */
     text-align: center;
 }
-
 .social-links {
     width: fit-content;
     /* making sure our content breaks when appropiate */
@@ -445,13 +378,11 @@ h3 {
     /* making sure our content breaks when appropiate */
     text-align: center;
 }
-
 .contact {
     text-decoration: none;
 }
 
 @media (min-width: 31.25rem) {
-
     .header {
         display: flex;
         flex-direction: row;
@@ -462,13 +393,11 @@ h3 {
         width: 100%;
         padding: 2rem 4vw;
     }
-
     .nav {
         width: fit-content;
         max-width: 300px;
         display: flex;
     }
-
     .menu {
         display: flex;
         flex-direction: row;
@@ -479,7 +408,6 @@ h3 {
         width: fit-content;
         overflow-wrap: anywhere;
     }
-
     .menu-link {
         display: inline-block;
         width: fit-content;
@@ -487,11 +415,9 @@ h3 {
         text-align: right;
         font-size: 1.1rem;
     }
-
     .main-wrapper {
         padding: 2rem 0;
     }
-
     .hero-text {
         font-size: 1.6rem;
         max-width: 500px;
@@ -506,9 +432,7 @@ h3 {
         width: 49%;
         padding-bottom: 1rem;
     }
-
     .healthy {
         max-width: 49%;
     }
-
 }
