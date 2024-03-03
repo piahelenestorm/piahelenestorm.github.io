@@ -167,7 +167,7 @@ h3 {
 .case-img {
     object-fit: cover;
     max-width: 100%;
-    height: 500px;
+    height: 300px;
 }
 .case-img-healthy {
     object-fit: cover;
@@ -216,6 +216,7 @@ h3 {
 .hero-section-wrapper {
     padding: 0 4vw;
 }
+
 .user-research-wrapper {
     background-color: #F2EDE8;
     padding-top: 3rem;
@@ -299,6 +300,14 @@ h3 {
 
 
 @media (min-width: 64.375rem) {
+
+    .case-img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 500px;
+    }
+
+
     .case-img-healthy {
         display: none;
     }
@@ -383,6 +392,13 @@ h3 {
 }
 
 @media (min-width: 31.25rem) {
+
+
+    .case-img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 400px;
+    }
     .header {
         display: flex;
         flex-direction: row;
