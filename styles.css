@@ -130,7 +130,7 @@ h1:hover {
 }
 .hero-text2 {
     font-size: 1.6rem;
-    padding: 3rem 0;
+    padding: 48px 0;
 }
 .case-title {
     letter-spacing: 1.5px;
@@ -186,7 +186,7 @@ h3 {
 /* ------------------------------------------------------------------ Header Styling ------------------------------------------------------------------------*/
 .header {
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 32px;
     padding-right: 4vw;
     padding-left: 4vw;
 }
@@ -197,29 +197,30 @@ h3 {
 /* --------------------------------------------------------------------- Main Styling -------------------------------------------------------------------------*/
 
 .main-wrapper {
-    padding: 3rem 0;
+    padding: 48px 0;
 }
 
 .main-wrapper2 {
-    padding: 3rem 4vw;
+    padding: 48px 4vw;
 
 }
 
 .hero-section {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     flex-wrap: wrap;
+    overflow-wrap: anywhere;
 }
 
 .hero-section-wrapper {
     padding: 0 4vw;
+    overflow-wrap: anywhere;
 }
-
 .user-research-wrapper {
     background-color: #F2EDE8;
-    padding-top: 3rem;
+    padding-top: 48px;
 }
 .user-research-padding {
     padding: 0 4vw;
@@ -231,6 +232,7 @@ h3 {
     width: 100%;
     gap: 1%;
     flex-wrap: wrap;
+    overflow-wrap: anywhere;
 }
 
 .case-container {
@@ -238,13 +240,14 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
     width: 99%;
-    padding-bottom: 1rem;
+    padding-bottom: 16px;
+    overflow-wrap: anywhere;
 }
 .case-wrapper {
     /* making sure our content breaks when appropiate */
     overflow-wrap: anywhere;
     /* making sure our content breaks when appropiate */
-    padding: 2rem;
+    padding: 32px;
     background-color: #D3D3D3;
     display: flex;
     flex-direction: column;
@@ -261,10 +264,11 @@ h3 {
 .case-hero-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
+    overflow-wrap: anywhere;
 }
 
 .video-healthy {
@@ -297,6 +301,14 @@ h3 {
     height: auto;
     object-fit: cover;
 }
+
+.fullsize-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
 
 
 @media (min-width: 64.375rem) {
@@ -405,7 +417,7 @@ h3 {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 32px;
         width: 100%;
         padding: 2rem 4vw;
     }
