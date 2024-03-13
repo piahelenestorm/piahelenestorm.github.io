@@ -138,6 +138,7 @@ h1:hover {
     width: fit-content;
     font-weight: 700;
     overflow-wrap: anywhere;
+    padding-bottom: 0.5rem;
 }
 .case-description {
     width: 100%;
