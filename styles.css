@@ -471,3 +471,17 @@ h3 {
         max-width: 49%;
     }
 }
+
+@media (min-width: 73.438rem) {
+
+    .case-wrapper {
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 87.5rem) {
+
+    .case-wrapper {
+        min-height: 280px;
+    }
+}
