@@ -130,7 +130,7 @@ h1:hover {
 }
 .hero-text2 {
     font-size: 1.6rem;
-    padding: 48px 0;
+    padding: 18px 0;
 }
 .case-title {
     letter-spacing: 1.5px;
@@ -139,6 +139,14 @@ h1:hover {
     font-weight: 700;
     overflow-wrap: anywhere;
     padding-bottom: 0.5rem;
+}
+
+.case-title2 {
+    letter-spacing: 1.5px;
+    font-size: 1.6rem;
+    width: fit-content;
+    font-weight: 700;
+    overflow-wrap: anywhere;
 }
 .case-description {
     width: 100%;
@@ -276,6 +284,10 @@ h3 {
 .video-healthy {
     max-width: 100%;
     height: auto;
+    border-radius: 15px;
+}
+
+.border-radius {
     border-radius: 15px;
 }
 .padding {
