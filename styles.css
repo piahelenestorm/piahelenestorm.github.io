@@ -134,11 +134,13 @@ h1:hover {
 .hero-text2 {
     font-size: 1.6rem;
     padding: 48px 0;
+    font-weight: 500;
 }
 
 .hero-text3 {
     font-size: 1.6rem;
     padding: 8px 0;
+    font-weight: 500;
 }
 .case-title {
     letter-spacing: 1.5px;
@@ -171,7 +173,7 @@ h3 {
     letter-spacing: 1px;
     font-size: 1.4rem;
     width: fit-content;
-    font-weight: 700;
+    font-weight: 600;
     height: fit-content;
     max-height: fit-content;
     margin-bottom: 0.6rem;
