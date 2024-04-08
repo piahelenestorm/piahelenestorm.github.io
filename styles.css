@@ -349,6 +349,7 @@ h3 {
     border: solid 1px #242424;
     text-align: center;
     width: fit-content;
+    max-width: 250px;
 }
 .footer-wrapper {
     display: flex;
