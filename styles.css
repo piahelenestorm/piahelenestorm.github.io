@@ -136,11 +136,10 @@ a:active {
 /* -------------------------------------------------------------------- Text Styling  --------------------------------------------------------------------------*/
 h1 {
     overflow-wrap: anywhere;
-    /* making sure our content breaks when appropiate */
     width: fit-content;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
+    font-size: 1.2rem;
     font-weight: 500;
+    letter-spacing: 0.8px;
 }
 
 h1:hover {
@@ -161,14 +160,6 @@ h1:hover {
     font-weight: 300;
 }
 
-.logo {
-    overflow-wrap: anywhere;
-    /* making sure our content breaks when appropiate */
-    width: fit-content;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    font-weight: 500;
-}
 
 .hero-text {
     font-size: 1.1rem;
@@ -187,16 +178,16 @@ h1:hover {
 }
 
 .case-title {
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
     font-size: 1.6rem;
     width: fit-content;
-    font-weight: 700;
+    font-weight: 600;
     overflow-wrap: anywhere;
     padding-bottom: 0.5rem;
 }
 
 .case-title2 {
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
     font-size: 1.6rem;
     width: fit-content;
     font-weight: 700;
@@ -210,26 +201,26 @@ h1:hover {
 
 h3 {
     letter-spacing: 1px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: fit-content;
-    font-weight: 700;
+    font-weight: 600;
     overflow-wrap: anywhere;
 }
 
 .case-intro-title {
     letter-spacing: 1px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     width: fit-content;
     font-weight: 700;
     height: fit-content;
     max-height: fit-content;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.7rem;
 }
 
 .case-intro-text {
     font-size: 1.1rem;
     width: fit-content;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.4rem;
 }
 
 /* ------------------------------------------------------------------ Media Styling ------------------------------------------------------------------------*/
@@ -325,7 +316,7 @@ h3 {
 .case-wrapper {
     /* making sure our content breaks when appropiate */
     overflow-wrap: anywhere;
-    padding: 32px;
+    padding: 24px;
     background-color: #D3D3D3;
     min-height: 200px;
 }
@@ -488,6 +479,10 @@ h3 {
         height: 400px;
     }
 
+  .case-wrapper {
+    padding: 32px;
+  }
+
     .header {
         display: flex;
         flex-direction: row;
@@ -559,7 +554,7 @@ h3 {
 @media (min-width: 58.875rem) {
 
     .case-wrapper {
-        min-height: 330px;
+        min-height: 280px;
     }
 
     .case-img {
@@ -604,15 +599,15 @@ h3 {
 }
 
 @media (min-width: 73.438rem) {
-
     .case-wrapper {
-        min-height: 300px;
+        min-height: 250px;
     }
+
 }
 
 @media (min-width: 87.5rem) {
 
     .case-wrapper {
-        min-height: 280px;
+        min-height: 230px;
     }
 }
