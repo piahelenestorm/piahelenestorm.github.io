@@ -137,9 +137,8 @@ a:active {
 h1 {
     overflow-wrap: anywhere;
     width: fit-content;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
-    letter-spacing: 0.3px;
 }
 
 h1:hover {
@@ -148,25 +147,18 @@ h1:hover {
     -webkit-background-clip: text;
     color: transparent;}
 
-.about-me-title {
-    overflow-wrap: anywhere;
-    margin-top: 2rem;
-    /* making sure our content breaks when appropiate */
-    width: fit-content;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    font-weight: 300;
-}
-
 
 .hero-text {
     font-size: 1.1rem;
 }
 
 .hero-text2 {
-    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 1.3rem;
     padding: 48px 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .hero-text3 {
@@ -176,8 +168,8 @@ h1:hover {
 }
 
 .case-title {
-    letter-spacing: 1.3px;
-    font-size: 1.6rem;
+    /* letter-spacing: 0.5px; */
+    font-size: 1.4rem;
     width: fit-content;
     font-weight: 700;
     overflow-wrap: anywhere;
@@ -185,8 +177,8 @@ h1:hover {
 }
 
 .case-title2 {
-    letter-spacing: 1.3px;
-    font-size: 1.6rem;
+    /* letter-spacing: 0.5px; */
+    font-size: 1.4rem;
     width: fit-content;
     font-weight: 700;
     overflow-wrap: anywhere;
@@ -198,15 +190,15 @@ h1:hover {
 }
 
 h3 {
-    letter-spacing: 1px;
-    font-size: 1.2rem;
+    /* letter-spacing: 0.5px; */
+    font-size: 1.1rem;
     width: fit-content;
-    font-weight: 600;
+    font-weight: 700;
     overflow-wrap: anywhere;
 }
 
 .case-intro-title {
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     font-size: 1.2rem;
     width: fit-content;
     font-weight: 700;
@@ -274,7 +266,6 @@ h3 {
     margin-bottom: 32px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     flex-wrap: wrap;
     overflow-wrap: anywhere;
 }
@@ -282,12 +273,18 @@ h3 {
 .hero-section-wrapper {
     padding: 0 4vw;
     overflow-wrap: anywhere;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(242,237,232,1) 96%);
 }
 
-.user-research-wrapper {
-    background-color: #F2EDE8;
-    padding-top: 48px;
+.hero-section-wrapper2 {
+    padding: 0 4vw;
+    overflow-wrap: anywhere;
 }
+.user-research-wrapper {
+    /* background-color: #F2EDE8; */
+    background: linear-gradient(180deg, rgba(242,237,232,1) 5%, rgba(255,255,255,1) 96%);
+}
+
 
 .user-research-padding {
     padding: 0 4vw;
@@ -332,7 +329,7 @@ h3 {
     max-width: 100%;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     overflow-wrap: anywhere;
 }
 
