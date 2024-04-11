@@ -107,7 +107,7 @@ a {
     color: var(--color-text);
     font-size: 1.1rem;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="%23092653" fill="%23092653" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
 }
 
@@ -138,7 +138,7 @@ h1 {
     overflow-wrap: anywhere;
     width: fit-content;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h1:hover {
