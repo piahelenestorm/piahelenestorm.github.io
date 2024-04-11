@@ -404,6 +404,14 @@ h3 {
     object-fit: cover;
 }
 
+.datavisualizing-border {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: solid 1px 242424;
+    border-radius: 5px;
+}
+
 .fullsize-img {
     max-width: 100%;
     height: auto;
@@ -569,7 +577,7 @@ h3 {
     }
 
     .main-wrapper {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
     }
 
     .hero-text {
@@ -607,6 +615,13 @@ h3 {
         max-width: 49%;
         height: auto;
         object-fit: cover;
+    }
+
+    .datavisualizing-border {
+        max-width: 49%;
+        height: auto;
+        object-fit: cover;
+        border: solid 1px 242424;
     }
 }
 
