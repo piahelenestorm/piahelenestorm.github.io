@@ -511,7 +511,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 2rem 4vw 3rem 4vw;
+    padding: 0 4vw 3rem 4vw;
     background-color: #fff;
 }
 
@@ -529,6 +529,7 @@ h3 {
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
+    margin: 0 auto;
 }
 
 .footer-wrapper>section {
@@ -664,11 +665,25 @@ h3 {
   .contact {
     display: inline-block;
     width: fit-content;
-    text-align: left;
     text-decoration: none;
     font-size: 1.1rem;
     overflow-wrap: anywhere;
+    margin: 0 auto;
+    text-align: center;
+
 }
+
+     .flex-wrapper {
+        display: flex;
+        width: 100%;
+        max-width: 500px;
+        overflow-wrap: anywhere;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-direction: row;
+        margin: 0 auto;     
+    } 
 
 }
 
@@ -683,7 +698,7 @@ h3 {
         max-width: 100%;
         height: 500px;
     }
-    .contact-wrapper {
+/*     .contact-wrapper {
         display: flex;
         width: 100%;
         flex-direction: row;
@@ -691,7 +706,7 @@ h3 {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 2rem;
-    }
+    } */
 
     .img-wrapper {
         display: flex;
@@ -733,19 +748,6 @@ h3 {
 @media (min-width: 73.438rem) {
     .case-wrapper {
         min-height: 250px;
-    }
-
-    .flex-wrapper {
-        display: flex;
-        width: 100%;
-        max-width: 500px;
-        /* making sure our content breaks when appropiate */
-        overflow-wrap: anywhere;
-        /* making sure our content breaks when appropiate */
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 0.5rem;
-        flex-direction: row;
     }
 
 }
