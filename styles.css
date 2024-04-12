@@ -236,7 +236,7 @@ h3 {
     font-weight: 600;
     height: fit-content;
     max-height: fit-content;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.4rem;
 }
 
 .case-intro-text {
@@ -306,7 +306,7 @@ h3 {
 /* --------------------------------------------------------------------- Main Styling -------------------------------------------------------------------------*/
 
 .main-wrapper {
-    padding: 24px 0 32px 0;
+    padding: 24px 0 0 0;
     max-width: 1100px;
     margin: 80px auto 0;
 }
@@ -511,7 +511,7 @@ h3 {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -654,7 +654,6 @@ h3 {
         overflow-wrap: anywhere;
         padding-bottom: 1rem;
         margin: 0 auto;
-
         text-align: center;
     }
 
