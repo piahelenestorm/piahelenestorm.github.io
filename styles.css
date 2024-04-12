@@ -317,7 +317,7 @@ h3 {
 }
 
 .hero-section {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -496,7 +496,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 0 5vw 3rem 5vw;
+    padding: 1rem 5vw 3rem 5vw;
     background-color: rgba(242, 237, 232, 1);
 }
 
