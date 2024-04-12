@@ -317,7 +317,7 @@ h3 {
 }
 
 .hero-section {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -514,6 +514,7 @@ h3 {
     gap: 2.5rem;
     flex-wrap: wrap;
     width: 100%;
+    padding-top: 8px;
 }
 
 .contact {
