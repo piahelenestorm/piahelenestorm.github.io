@@ -367,7 +367,7 @@ h3 {
     /* making sure our content breaks when appropiate */
     overflow-wrap: anywhere;
     padding: 24px;
-    background-color: #D3D3D3;
+    background-color: #ebebeb;
     min-height: 200px;
     border-radius: 0 0 5px 5px;
 }
@@ -512,6 +512,7 @@ h3 {
     width: 100%;
     text-align: left;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .footer-wrapper>section {
@@ -649,6 +650,7 @@ h3 {
     width: fit-content;
     text-align: left;
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 }
