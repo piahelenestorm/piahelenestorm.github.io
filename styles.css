@@ -518,12 +518,14 @@ h3 {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .contact {
-    display: inline-block;
-    width: 100%;
+    width: fit-content;
+    overflow-wrap: anywhere;
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
@@ -665,6 +667,7 @@ h3 {
     text-align: left;
     text-decoration: none;
     font-size: 1.1rem;
+    overflow-wrap: anywhere;
 }
 
 }
@@ -682,6 +685,7 @@ h3 {
     }
     .contact-wrapper {
         display: flex;
+        width: 100%;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
