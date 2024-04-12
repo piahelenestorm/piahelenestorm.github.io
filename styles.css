@@ -195,7 +195,7 @@ h1:hover {
     font-weight: 600;
     text-align: left;
     overflow-wrap: anywhere;
-    padding-bottom: 1rem;
+    padding-bottom: 0.4rem;
 }
 
 .case-title {
