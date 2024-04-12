@@ -566,7 +566,7 @@ h3 {
 @media (min-width: 31.25rem) {
 
     h1 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .main-wrapper {
@@ -666,7 +666,7 @@ h3 {
     display: inline-block;
     width: fit-content;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     overflow-wrap: anywhere;
     margin: 0 auto;
     text-align: center;
@@ -698,15 +698,13 @@ h3 {
         max-width: 100%;
         height: 500px;
     }
-/*     .contact-wrapper {
+    .contact-wrapper {
         display: flex;
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 2rem;
-    } */
+        width: 100%;
+    }
 
     .img-wrapper {
         display: flex;
