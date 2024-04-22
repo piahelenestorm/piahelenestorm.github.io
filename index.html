@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+  <meta name="description"
+    content="A personal portfolio by Pia Helene Storm. Showcases case studies in ux design and coding projects. Focuses on accessible solutions.">
+  <meta name="keywords" content="front-end, ux, accessibillity, portfolio, Pia Helene Storm">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" media="screen">
+  <link rel="stylesheet" href="animations.css" media="screen">
+  <link rel="stylesheet" href="wardrobe.css" media="screen">
+
+  <script defer type="text/javascript" src="script.js"></script>
+
+  <title>Pia Helene Storm | Portfolio</title>
+</head>
+
+<body>
+  <!--Gradient background-->
+  <div class="a-gradient-layer-front">
+    <header class="header" id="header" aria-label="Main Navigation">
+      <a href="/" class="logo">
+        <h1 id="header-link">Pia Helene Storm | Portfolio</h1>
+      </a>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu-link active"><a id="header-link" href="#cases">Case studies</a></li>
+          <li class="menu-link"><a id="header-link" href="/visuals.html">Visuals</a></li>
+          <li class="menu-link"><a id="header-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="white-background">
+      <main class="main-page-wrapper">
+        <section class="hero-section">
+          <p class="hero-text padding-wrapper padding-bottom">
+            Digital product designer and front-end coder. Specializes in creating accessible digital experiences.
+          </p>
+        </section>
+
+        <section class="cases-section padding-wrapper" id="cases">
+          <div class="a-card">
+            <section class="case-container">
+              <img class="case-img" src="/images/ruthcalendar/ruth.jpg" alt="" max-width="100%" height="auto">
+              <div class="text-icon-wrapper">
+                <p class="case-intro-text">Ruth Calendar <span class="secondary-text">• Coming soon</span></p>
+                <img class="arrow-img" src="/images/arrow.svg" alt="">
+              </div>
+            </section>
+          </div>
+          <div class="a-card">
+            <a href="wardrobe.html" id="no-underline">
+              <section class="case-container">
+                <img class="case-img" src="/images/wardrobe/wardrobe_hero.png" alt="">
+                <div class="text-icon-wrapper">
+                  <p class="case-intro-text">The Wardrobe <span class="secondary-text">(app, web)</span></p>
+                  <img class="arrow-img" src="/images/arrow.svg" alt="">
+                </div>
+              </section>
+            </a>
+          </div>
+
+          <div class="a-card healthy">
+            <a href="healthytogether.html" id="no-underline">
+              <section class="case-container">
+                <img class="case-img" src="/images/healthytogether/hero.png" alt="" max-width="100%" height="auto">
+                <div class="text-icon-wrapper">
+                  <p class="case-intro-text">Healthy Together <span class="secondary-text">(app)</span></p>
+                  <img class="arrow-img" src="/images/arrow.svg" alt="">
+                </div>
+              </section>
+            </a>
+          </div>
+        </section>
+      </main>
+      
+    </div>
+
+    <footer>
+      <div class="footer-wrapper-dark">
+        <section class="contact-wrapper padding-wrapper" id="contact">
+          <p class="contact-light padding2">Hi, I'm Pia ✨ I work as a Product Designer and front-end coder in Odense, Denmark. I love creating digital 
+            experiences that are both fun and accessible. If you have a question or wanna grab a coffee with me<span class="big-font">☕</span>
+            please feel free to contact me at piahelenestorm@gmail.com</p>
+            <div class="links-and-text">
+          <ul class="flex-wrapper">
+            <li><a class="social-link" href="https://www.linkedin.com/in/pia-helene-storm/" target="_blank">LinkedIn</a>
+            </li>
+            <li><a class="social-link" href="https://github.com/piahelenestorm" target="_blank">GitHub</a></li>
+            <li><a class="social-link" href="https://www.instagram.com/piahelenestorm_/" target="_blank">Instagram</a>
+            </li>
+            <li><a class="social-link" href="https://dribbble.com/piahelenestorm" target="_blank">Dribbble</a></li>
+          </ul>
+          <p class="contact-light-right">© Pia Helene Storm</p></div>
+
+        </section>
+      </div>
+  </div>
+  </footer>
+  </div>
+
+</html>
