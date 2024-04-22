@@ -115,7 +115,7 @@
 
 .letter.out {
     transform: rotateX(90deg);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: transform 0.50s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .letter.behind {
@@ -124,7 +124,7 @@
 
 .letter.in {
     transform: rotateX(0deg);
-    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.50s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 
@@ -176,17 +176,21 @@
 .beige-box-background {
     height: fit-content;
     max-width: 100%;
-    background: #E1DDDA;
-    /* background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%); */
+    /*     background: #E1DDDA;
     background: radial-gradient(at 18% 99%, #fdfbfb 0px, transparent 50%) repeat scroll 0% 0%,
         radial-gradient(at 97% 8%, #fdfbfb 0px, transparent 50%) repeat scroll 0% 0%,
         radial-gradient(at 79% 82%, #f3e7e9 0px, transparent 50%) repeat scroll 0% 0%,
         radial-gradient(at 96% 10%, #e6e9f0 0px, transparent 50%) repeat scroll 0% 0%,
         radial-gradient(at 42% 20%, #f3e7e9 0px, transparent 50%) repeat scroll 0% 0%,
         radial-gradient(at 4% 49%, #eef1f5 0px, transparent 50%) repeat scroll 0% 0%,
-         rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, #fdfbfb 0px, #F2EDE8 30%) repeat scroll 0% 0%;
+        rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, #fdfbfb 0px, #F2EDE8 30%) repeat scroll 0% 0%;
     background-size: 200% 200%;
-    animation: gradient2 8s ease infinite;
+    animation: gradient2 8s ease infinite; */
+    background: #fff;
+    background-image: url(/images/healthytogether/background.png);
+/*     background: linear-gradient(-45deg, #ebe8e5, #ebe9e8, #ECECEC, #d9ded8);
+    background-size: 400% 400%;
+    animation: gradient2 15s ease infinite; */
 }
 
 @keyframes gradient2 {
