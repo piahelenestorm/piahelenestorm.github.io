@@ -203,7 +203,7 @@
     font-weight: 400;
     overflow-wrap: anywhere;
     padding: 0 6vw 0 6vw;
-    text-align: center;
+    text-align: left;
 }
 
 .title-dark {
@@ -213,7 +213,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     overflow-wrap: anywhere;
-    text-align: center;
+    text-align: left;
 }
 
 .title-light-left {
@@ -256,6 +256,22 @@
     .wardrobe-case-img-light {
         min-height: 50vh;
         max-width: 100%;
+    }
+
+    .title-dark {
+        font-size: 1.7rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .text-dark-center {
+        display: block;
+        color: #242424;
+        font-size: 1.05rem;
+        font-weight: 400;
+        overflow-wrap: anywhere;
+        padding: 0 6vw 0 6vw;
+        text-align: center;
     }
 
     .white-box-background {
@@ -418,10 +434,6 @@
         padding: 0 0 0 0;
     }
 
-    .title-dark {
-        font-size: 1.7rem;
-        padding: 0;
-    }
 
     .title-dark-left {
         font-size: 1.7rem;
