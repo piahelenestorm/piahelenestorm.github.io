@@ -179,13 +179,13 @@ h1:hover {
     font-weight: 400;
 }
 
-#header-link {
+.header-link {
     font-weight: 400;
     display: inline-block;
     font-family: "Poppins", sans-serif;
 }
 
-#header-link:hover {
+.header-link:hover {
     font-weight: 500;
 }
 
@@ -195,7 +195,7 @@ a.active {
 
 .hero-text {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Poppins", sans-serif;
 }
 
