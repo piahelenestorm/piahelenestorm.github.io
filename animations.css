@@ -64,20 +64,25 @@
 
 /* ------------------------------------------------------Typewriter animations --------------------------------------------------*/
 /* https://www.youtube.com/watch?v=R846J8LJ6os */
+.typewriter-text {
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 1.7rem;
+    padding: 26px 0;
+    font-family: "Playfair Display", serif;
+}
 #typewriter {
     font-weight: 600;
 }
-
 #typewriter2 {
     font-weight: 600;
 }
-
-
 #typewriter3 {
     font-weight: 600;
+    font-family: "Playfair Display", serif;
 }
-
-
 #cursor {
     color: blue;
     animation: blink 1s linear infinite;
@@ -139,9 +144,9 @@
 
     /* https://codepen.io/P1N2O/pen/pyBNzX gradient by Manuel Pinto*/
     background: #fff;
-    background: linear-gradient(-50deg, #9198e5, #F2EDE8, #F2EDE8);
+    background: linear-gradient(-60deg, #9198e5, #F2EDE8, #F2EDE8);
     background-size: 400% 400%;
-    animation: gradient 14s ease infinite;
+    animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
@@ -176,21 +181,8 @@
 .beige-box-background {
     height: fit-content;
     max-width: 100%;
-    /*     background: #E1DDDA;
-    background: radial-gradient(at 18% 99%, #fdfbfb 0px, transparent 50%) repeat scroll 0% 0%,
-        radial-gradient(at 97% 8%, #fdfbfb 0px, transparent 50%) repeat scroll 0% 0%,
-        radial-gradient(at 79% 82%, #f3e7e9 0px, transparent 50%) repeat scroll 0% 0%,
-        radial-gradient(at 96% 10%, #e6e9f0 0px, transparent 50%) repeat scroll 0% 0%,
-        radial-gradient(at 42% 20%, #f3e7e9 0px, transparent 50%) repeat scroll 0% 0%,
-        radial-gradient(at 4% 49%, #eef1f5 0px, transparent 50%) repeat scroll 0% 0%,
-        rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, #fdfbfb 0px, #F2EDE8 30%) repeat scroll 0% 0%;
-    background-size: 200% 200%;
-    animation: gradient2 8s ease infinite; */
     background: #fff;
     background-image: url(/images/healthytogether/background.png);
-/*     background: linear-gradient(-45deg, #ebe8e5, #ebe9e8, #ECECEC, #d9ded8);
-    background-size: 400% 400%;
-    animation: gradient2 15s ease infinite; */
 }
 
 @keyframes gradient2 {
