@@ -564,10 +564,10 @@ h3 {
     letter-spacing: 0.2rem;
 }
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     background-image: url(/images/circle.png);
-    background-size: 200px;
+    background-size: 175px;
     margin: 0 auto;
     border-radius: 50%;
     position: relative;
