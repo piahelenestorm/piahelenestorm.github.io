@@ -228,7 +228,13 @@ h1 {
     overflow-wrap: anywhere;
     font-size: 1.05rem;
     padding-right: 1rem;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+}
+
+.last-name {
     font-weight: 400;
+    font-style: italic;
 }
 
 h1:hover {
@@ -294,7 +300,7 @@ h1:hover {
 .case-hero-name {
     font-size: 0.9rem;
     color: #242424;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
 }
@@ -307,6 +313,7 @@ h1:hover {
     text-align: left;
     overflow-wrap: anywhere;
     letter-spacing: 0.1rem;
+    line-height: 1.5;
 }
 
 .case-hero-title-center {
@@ -550,10 +557,9 @@ h3 {
 }
 
 .see-my-work {
-    padding: 0 0 0 0;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
     width: fit-content;
     letter-spacing: 0.2rem;
 }
@@ -617,8 +623,8 @@ h3 {
 
 a.social-link {
     color: #fff;
-    font-family: "Nunito Sans", sans-serif;
     font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 
 a.social-link:hover {
@@ -634,34 +640,24 @@ a.social-link:hover {
     width: 100%;
 }
 
-.contact {
-    width: fit-content;
-    overflow-wrap: anywhere;
-    text-align: left;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: #fff;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 300;
-}
-
 .contact-light {
+    font-family: 'Poppins', sans-serif;
     width: fit-content;
     overflow-wrap: anywhere;
     text-align: left;
     text-decoration: none;
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: #fff;
     font-weight: 300;
-    font-family: 'Poppins', sans-serif;
 }
 
 .contact-light-right {
+    font-family: 'Poppins', sans-serif;
     width: fit-content;
     overflow-wrap: anywhere;
     text-align: right;
     text-decoration: none;
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -814,14 +810,6 @@ a.social-link:hover {
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
-    .contact {
-        text-decoration: none;
-        font-size: 1.05rem;
-        overflow-wrap: anywhere;
-        text-align: left;
-    }
-
     /* Foooter styling ends */
 }
 
@@ -831,6 +819,17 @@ a.social-link:hover {
     /* Text Styling STARTS */
     .title-dark-left {
         font-size: 1.7rem;
+    }
+    .see-my-work {
+        font-size: 0.9rem;
+    }
+    h1 {
+        display: inline;
+        overflow-wrap: anywhere;
+        font-size: 1.4rem;
+        padding-right: 1rem;
+        font-weight: 600;
+        font-family: "Playfair Display", serif;
     }
 
     /* Background Styling STARTS */
