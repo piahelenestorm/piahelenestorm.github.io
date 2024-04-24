@@ -42,23 +42,11 @@
 .scroll div span {
     display: inline-flex;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 10px 30px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     padding: 5px 10px;
     transition: 0.5s;
-}
-
-@media (min-width: 63.75rem) {
-    .scroll div span {
-        display: inline-flex;
-        font-family: "Poppins", sans-serif;
-        font-size: 1.2rem;
-        font-weight: 300;
-        margin: 10px 30px;
-        padding: 5px 10px;
-        transition: 0.5s;
-    }
 }
 
 
