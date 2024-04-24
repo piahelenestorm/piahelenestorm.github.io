@@ -1,14 +1,10 @@
 let header = document.getElementById('header');
-let headerText = document.getElementById('header-link');
-let headerTextLinkA = document.getElementById('header-link-a');
-let headerTextLinkB = document.getElementById('header-link-b');
-
 
 document.addEventListener('scroll', function() {
   
   // Get the scroll position
   let scrollPos = window.scrollY;
-  if ( scrollPos > 100 ) {
+  if ( scrollPos > 140 ) {
     header.style.backgroundColor = "white";
   } else {
     header.style.backgroundColor = "transparent";
@@ -25,7 +21,7 @@ const phrases2 = ["design for", "motivate", "inspire"];
 const el = document.getElementById("typewriter");
 const el2 = document.getElementById("typewriter2");
 
-let sleepTime = 100;
+let sleepTime = 130;
 
 let curPhraseIndex = 0;
 
