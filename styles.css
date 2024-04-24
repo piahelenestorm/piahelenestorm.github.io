@@ -830,13 +830,13 @@ a.social-link:hover {
     h1 {
         display: inline;
         overflow-wrap: anywhere;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         padding-right: 1rem;
         font-weight: 600;
         font-family: "Playfair Display", serif;
     }
     a.header-link {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     /* Background Styling STARTS */
