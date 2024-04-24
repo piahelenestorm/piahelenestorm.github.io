@@ -245,7 +245,7 @@ h1:hover {
 .nav {
     /* display: none; */
     width: fit-content;
-    max-width: 275px;
+    max-width: 325px;
     display: flex;
 }
 
@@ -724,7 +724,7 @@ a.social-link:hover {
         flex-wrap: wrap;
         gap: 1rem;
         width: 100%;
-        padding: 50px 6vw;
+        padding: 45px 6vw;
     }
 
     .menu {
@@ -738,6 +738,10 @@ a.social-link:hover {
         text-align: right;
         font-size: 1.05rem;
         padding-left: 0.5rem;
+    }
+
+    a.header-link {
+        font-size: 1.05rem;
     }
 
     /* Front Page Styling STARTS */
@@ -830,6 +834,9 @@ a.social-link:hover {
         padding-right: 1rem;
         font-weight: 600;
         font-family: "Playfair Display", serif;
+    }
+    a.header-link {
+        font-size: 1.2rem;
     }
 
     /* Background Styling STARTS */
