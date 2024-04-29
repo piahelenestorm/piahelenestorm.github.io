@@ -305,7 +305,7 @@ h1:hover {
     font-size: 0.9rem;
     color: #242424;
     font-weight: 400;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.20rem;
     text-transform: uppercase;
 }
 
@@ -347,6 +347,15 @@ h1:hover {
     overflow-wrap: anywhere;
     padding: 0 6vw 0 6vw;
     text-align: center;
+}
+
+.text-title {
+    display: inline-block;
+    color: #242424;
+    max-width: fit-content;
+    font-size: 1.1rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
 }
 
 .text-dark {
