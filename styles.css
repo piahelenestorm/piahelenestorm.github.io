@@ -565,7 +565,7 @@ h3 {
     font-size: 0.8rem;
     font-weight: 500;
     width: fit-content;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.17rem; 
 }
 .circle {
     width: 175px;
@@ -633,6 +633,10 @@ a.social-link {
 
 a.social-link:hover {
     color: #fff;
+    text-decoration: underline;
+}
+
+.underlined {
     text-decoration: underline;
 }
 
