@@ -571,10 +571,10 @@ h3 {
 
 .see-my-work {
     margin-top: 1.5rem;
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 400;
     width: fit-content;
-    letter-spacing: 0.17rem; 
+    letter-spacing: 0.10rem; 
 }
 .circle {
     width: 175px;
@@ -842,7 +842,7 @@ a.social-link:hover {
         font-size: 1.7rem;
     }
     .see-my-work {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     h1 {
         display: inline;
@@ -930,7 +930,7 @@ a.social-link:hover {
     .heading-img {
         position: absolute;
         width: fit-content;
-        max-width: 70%;
+        max-width: 60%;
         bottom: 6vw;
         left: 0vw;
         padding-top: 0;
