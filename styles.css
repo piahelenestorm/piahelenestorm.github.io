@@ -1,0 +1,1520 @@
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+caption,
+table,
+tr,
+td,
+th,
+address,
+blockquote,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+fieldset,
+object {
+    border: none;
+}
+
+*,
+*:after,
+*:before {
+    flex: 1 0 auto;
+    /* safari bugfix */
+    box-sizing: border-box;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    display: none;
+}
+
+body,
+button,
+input,
+table,
+textarea,
+select {
+    font-size: 1em;
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    overflow-wrap: break-word;
+    /* making sure our content breaks when appropiate */
+    /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23092653" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto; */
+    height: 100vh;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.list-style-bullet {
+    list-style: initial;
+    font-size: 1.05rem;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    font-weight: 300;
+}
+
+:root {
+    --background-color: #fff;
+    --background-color2: #F2EDE8;
+    --background-color3: #E7E3E2;
+    --text-color: #242424;
+    --text-color2: #3c3c3c;
+    --text-color3: #242424;
+    --cursor-color: blue;
+    --toggle-button: #ccc;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: var(--background-color);
+}
+
+button:focus {
+    outline: var(--background-color);
+
+}
+
+
+/* ----------------------------------------------------- Theme Styling --------------------------------------------------------*/
+[theme="dark"] {
+
+    --text-color: #fefefe;
+    --text-color2: #b0b0b0;
+    --text-color3: #242424;
+    --background-color: #121212;
+    --background-color2: #121212;
+    --background-color3: #222222;
+    --toggle-button: #6e6e6e;
+    --cursor-color: yellow;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    margin-left: auto;
+    width: fit-content;
+    text-align: right;
+}
+
+.toggle-wrapper {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-wrapper:focus {
+    outline: var(--background-color);
+    border: var(--background-color);
+}
+
+/* ------------------------------------------------------------ Background Styling STARTS --------------------------------------------------------------*/
+.white-box-background {
+    height: fit-content;
+    max-width: 100%;
+    background: var(--background-color);
+    /* transition: background-color 1000ms linear; */
+    margin-top:3.5rem;
+
+}
+
+.transparent-box-background {
+    height: fit-content;
+    max-width: 100%;
+    background: transparent;
+    /* transition: background-color 1000ms linear; */
+}
+
+.white-box-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 3rem;
+}
+
+.white-box-wrapper2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+}
+
+/* ------------------------------------------------------------ Link Styling STARTS --------------------------------------------------------------*/
+a {
+    display: inline;
+    font-size: 1.05rem;
+    text-decoration: none;
+    /*     font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    text-decoration: none; */
+
+}
+
+a:link {
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+a:active {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+a.hero-link {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a.hero-link:hover {
+    font-weight: 500;
+}
+
+/* ------------------------------------------------------------ Text Styling STARTS --------------------------------------------------------------*/
+.font-reg {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
+
+.font-hero {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 300;
+
+}
+
+.title-dark-left {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+
+
+/* ------------------------------------------------------------- MENU ------------------------------------------------------*/
+/* Menu Icon */
+
+.hamb {
+    cursor: pointer;
+    padding: 40px 30px;
+    max-width: 60px;
+    text-align: right;
+    margin-left: auto;
+    float: right;
+}
+
+.hamb-line {
+    background: var(--text-color);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+    background: var(--text-color);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .50s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+/* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked~nav {
+    max-height: 100%;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/*--------------------------------------------------------- Menu End --------------------------------------------------*/
+
+/* .main-wrapper-wardrobe{
+    margin-top: 2rem;
+} */
+
+.padding {
+    margin-top: 2rem;
+}
+
+.padding2 {
+    margin-top: 3.5rem;
+}
+
+.padding3 {
+    margin-top: 5rem;
+}
+
+.padding-bottom {
+    margin-bottom: 1.5rem;
+}
+
+.padding-bottom2 {
+    margin-bottom: 3.5rem;
+}
+
+.padding-bottom3 {
+    padding-bottom: 2rem;
+}
+
+.padding-text {
+    margin-top: 0.4rem;
+}
+
+.width-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.padding-wrapper {
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+
+/* ------------------------------------------------------------------ Header styling STARTS ---------------------------------------------------------------------*/
+.header {
+    background-color: transparent;
+    width: 100%;
+    -webkit-transition: all ease-out .7s;
+    -moz-transition: all ease-out .7s;
+    -o-transition: all ease-out .7s;
+    transition: all ease-out .7s;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    padding: 0.5rem 6vw 0 6vw;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.logo-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    max-width: fit-content;
+}
+
+h1 {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    text-transform: uppercase;
+    letter-spacing: 0.10rem;
+
+    padding-right: 1.02rem;
+    overflow-wrap: anywhere;
+    display: inline;
+    max-width: fit-content;
+}
+
+h1:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+a.logo {
+    display: inline-block;
+    max-width: fit-content;
+}
+
+.a-bold-letter {
+    font-weight: 600;
+}
+
+.last-name {
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* .nav {
+    width: fit-content;
+    max-width: 356px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+
+.nav2 {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .25s ease-in-out;
+}
+
+.menu2 {
+    width: fit-content;
+    margin-bottom: 3rem;
+}
+
+
+.menu2 a {
+    display: block;
+    padding-bottom: 1.8rem;
+    font-size: 1rem;
+    text-align: left;
+    max-width: fit-content;
+    overflow-wrap: anywhere;
+    color: var(--text-color);
+
+    letter-spacing: 0.05em;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* ------------------------------------------------------------------ Header styling ENDS ---------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------ Case Page Styling STARTS ---------------------------------------------------------------------*/
+/* -------------------- Case Hero Section STARTS------------------------*/
+.hero-text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-text {
+    font-size: 1.3rem;
+    font-family: "Manrope", sans-serif;
+    max-width: 90%;
+    text-align: left;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+    padding: 0 3vw;
+    margin-bottom: 5rem;
+}
+
+.hero-sub-text {
+    padding: 0.2rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    width: fit-content;
+    text-align: left;
+    max-width: 100%;
+}
+
+.heading-img {
+    max-width: 100%;
+    max-height: 90%;
+    margin: auto auto;
+    padding: 0 6vw;
+}
+
+.bold-text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    line-height: 1;
+    font-style: normal;
+}
+
+.case-hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.case-hero-name {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.case-hero-title {
+    max-width: fit-content;
+    font-weight: 600;
+    text-align: left;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+    /* font-family: "Playfair Display", serif; */
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 0.05rem;
+
+}
+
+.case-hero-title-center {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: var(--text-color3);
+    max-width: 100%;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    overflow-wrap: anywhere;
+}
+
+.case-hero-title-center2 {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: var(--text-color);
+    max-width: 100%;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: anywhere;
+    letter-spacing: 0.05rem;
+}
+
+.title-dark {
+    display: block;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+
+.text-dark-center {
+    display: block;
+    color: var(--text-color3);
+    font-size: 1.05rem;
+    font-weight: 300;
+    overflow-wrap: anywhere;
+    padding: 0 6vw 0 6vw;
+    text-align: center;
+}
+
+.text-dark-center2 {
+    display: block;
+    color: var(--text-color);
+    font-size: 1.05rem;
+    font-weight: 300;
+    overflow-wrap: anywhere;
+    padding: 0 6vw 0 6vw;
+    text-align: center;
+}
+
+.text-title {
+    display: inline-block;
+    color: var(--text-color);
+    max-width: fit-content;
+    font-size: 1.05rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.title-center {
+    display: inline-block;
+    color: var(--text-color);
+    max-width: 100%;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.text-dark {
+    display: inline-block;
+    color: var(--text-color);
+    max-width: fit-content;
+    font-size: 1.05rem;
+    font-weight: 300;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+a.a-link {
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+a.a-link:hover {
+    text-decoration: underline;
+    font-weight: 500;
+
+}
+
+.top-link {
+    font-size: 1.05rem;
+    font-weight: 300;
+    text-decoration: underline;
+
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+a.top-link:hover {
+    text-decoration: underline;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+/* -------------------- Case Hero Section ENDS ------------------------*/
+
+.img-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 1%;
+}
+
+.wardrobe-image {
+    max-width: 49%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+.wardrobe-case-25-light {
+    height: 15vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.img-desktop1 {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+}
+
+.two-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+}
+
+.box1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+h3 {
+    font-size: 1.2rem;
+    width: fit-content;
+    overflow-wrap: anywhere;
+    font-weight: 400;
+}
+
+.main-wrapper {
+    padding: 24px 0 0 0;
+    max-width: 1200px;
+    margin: 80px auto 0;
+}
+
+.title-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.case-hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow-wrap: anywhere;
+}
+
+.handwriting {
+    font-family: "Playfair Display", cursive;
+    font-size: 1.7rem;
+}
+
+
+/* Button Styling STARTS*/
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-to-top {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border: solid 1px var(--text-color);
+    text-align: center;
+    width: fit-content;
+    max-width: 250px;
+    border-radius: 5px;
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+    letter-spacing: 0.01em;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+/* Button Styling ENDS*/
+
+
+/* ------------------------------------------------------------------ Case Page Styling ENDS ---------------------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------- Front Page Styling STARTS --------------------------------------------------------------------- */
+.main-page-wrapper {
+    padding: 24px 0;
+    margin: 24px auto 0;
+}
+
+.front-page-wrapper {
+    padding: 0 0;
+    margin: 16px auto 0;
+}
+.hero-section-top {
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    height: 82vh;
+}
+
+.hero-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    margin: 0 auto;
+}
+
+/*A card STARTS*/
+.cases-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1.5%;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 6vw;
+}
+
+.a-card {
+    width: 99%;
+    position: relative;
+}
+
+.case-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    width: 100%;
+    padding-bottom: 1.3rem;
+}
+
+.case-img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.text-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.08rem;
+    flex-wrap: wrap;
+}
+
+.case-intro-text {
+    padding: 0.2rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    width: fit-content;
+    text-align: left;
+    letter-spacing: 0.02rem;
+}
+
+a.case-intro-text {
+    padding: 0.2rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    width: fit-content;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0.02rem;
+
+}
+
+.arrow-img {
+    max-width: 24px;
+    height: auto;
+    text-align: right;
+}
+
+.arrow-down-img {
+    width: 30px;
+    height: auto;
+    text-align: center;
+}
+
+.see-my-work-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.see-my-work {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: fit-content;
+    letter-spacing: 0.10rem;
+}
+
+.circle {
+    width: 175px;
+    height: 175px;
+    background-image: url(/images/circle.png);
+    background-size: 175px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.4s;
+}
+
+.circle:hover {
+    transform: scale(1.020);
+    font-weight: 400;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-text {
+    font-weight: 300;
+    color: var(--text-color2);
+}
+
+/*A card ENDS*/
+/* --------------------------------------------------------- Front Page Styling ENDS ------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------- ABout Me Page Styling STARTS ------------------------------------------------------------------- */
+
+.text-img-wrapper {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.aboutme-image {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto 2rem auto;
+}
+
+.about-hero-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0.5rem;
+}
+
+/* --------------------------------------------------------- About ME Page Styling ENDS ------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------- Footer styling STARTS ---------------------------------------------------------------------------*/
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 0 3rem 0;
+    background-color: transparent;
+}
+
+a.linkedin-link {
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-light {
+    width: fit-content;
+    overflow-wrap: anywhere;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.contact-light-left {
+    width: fit-content;
+    overflow-wrap: anywhere;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    background-color: var(--background-color);
+}
+
+.contact-dark-right {
+    width: fit-content;
+    overflow-wrap: anywhere;
+    text-align: right;
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: #242424;
+}
+
+.links-and-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper>section {
+    width: fit-content;
+    overflow-wrap: anywhere;
+}
+
+
+.flex-wrapper {
+    display: flex;
+    overflow-wrap: anywhere;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flex-wrapper>li {
+    width: fit-content;
+    overflow-wrap: anywhere;
+}
+
+
+.icon-some {
+    height: 24px;
+    width: auto;
+    place-self: center;
+}
+
+
+
+/* --------------------------------------------------------- Footer styling ENDS ---------------------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------- Media styling STARTS ---------------------------------------------------------------------------*/
+@media (min-width: 37.5rem) {
+    .nav2 {
+        max-height: none;
+        background-color: transparent;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 356px;
+        justify-content: flex-end;
+    }
+
+    .toggle-wrapper {
+        margin-left: auto;
+    }
+
+
+    .menu2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+        width: fit-content;
+        overflow-wrap: anywhere;
+    }
+
+
+    .menu2 a {
+        display: inline-block;
+        color: var(--text-color);
+        font-weight: 400;
+        padding-bottom: 0;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    .menu2 a:hover {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+
+    li.active a:before,
+    a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+
+    .hamb {
+        display: none;
+    }
+
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-wrap: anywhere;
+        max-width: 100%;
+        height: 90vh;
+    }
+
+    /* ------ Background Styling STARTS ------*/
+    .white-box-background {
+        min-height: 30vh;
+        max-width: 100%;
+    }
+
+
+    .transparent-box-background {
+        min-height: 30vh;
+        max-width: 100%;
+    }
+
+
+
+    .list-style-bullet {
+        list-style: initial;
+        font-size: 1.05rem;
+        font-weight: 300;
+        padding-left: 3vw;
+        padding-right: 0;
+    }
+
+
+    /* ---------- Header Styling STARTS ------------ */
+    .menu-link {
+        display: inline-block;
+        overflow-wrap: anywhere;
+        text-align: center;
+        padding-left: 0.1rem;
+    }
+
+
+
+    a.header-link:hover {
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    /* Front Page Styling STARTS */
+    .main-page-wrapper {
+        padding: 70px 0;
+        margin: 0 auto;
+    }
+
+    .front-page-wrapper {
+        padding: 0 0;
+        margin: 0 auto;
+    }
+
+    .case-img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 350px;
+    }
+
+    /* Case Page Styling STARTS */
+    .main-wrapper {
+        padding: 1.5rem 0 3rem 0;
+        margin: 115px auto 0;
+    }
+
+    .case-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .case-hero-title-center {
+        font-size: 1.8rem;
+    }
+
+    .title-dark {
+        font-size: 1.7rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .two-boxes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 3rem;
+    }
+
+    /* Visuals Page Styling STARTS */
+    .visuals-img {
+        object-fit: cover;
+        max-width: 100%;
+        height: 450px;
+        border-radius: 5px;
+    }
+
+    /* ---------- Foooter styling STARTS ------- */
+    .links-and-text {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .header-wrapper {
+        padding: 1rem 6vw;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        width: fit-content;
+        overflow-wrap: anywhere;
+        padding-right: 3.5rem;
+    }
+
+    /* Foooter styling ends */
+}
+
+@media (min-width: 48rem) {}
+
+@media (min-width: 56rem) {
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-wrap: anywhere;
+        max-width: 100%;
+        height: 82vh;
+    }
+
+    .text-img-wrapper {
+        display: flex;
+        max-width: 100%;
+        flex-direction: row;
+        gap: 6rem;
+    }
+
+    .aboutme-image {
+        width: 40%;
+        max-width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
+    .about-hero-section {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        gap: 0.5rem;
+    }
+
+
+    .list-style-bullet {
+        list-style: initial;
+        font-size: 1.05rem;
+        padding-left: 1vw;
+        padding-right: 0;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+        max-width: 65%;
+        text-align: left;
+        overflow-wrap: anywhere;
+        letter-spacing: 0.1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+
+    a.hero-link {
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+
+    .hero-sub-text {
+        padding: 0.2rem 0;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        max-width: 65%;
+    }
+
+    /* Text Styling STARTS */
+    .title-dark-left {
+        font-size: 1.7rem;
+    }
+
+    .see-my-work {
+        font-size: 1rem;
+    }
+
+    .case-intro-text {
+        font-size: 1.05rem;
+    }
+
+    /*   a.header-link {
+        font-size: 1.05rem;
+    } */
+
+    /* Background Styling STARTS */
+    .white-box-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        padding-top: 0rem;
+        padding-bottom: 4rem;
+    }
+
+    .white-box-wrapper2 {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        padding-top: 6rem;
+        padding-bottom: 0rem;
+    }
+
+    /* Case Styling */
+    .wardrobe-case-25-light {
+        height: 15vh;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .two-boxes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 4rem;
+    }
+
+    /* Front Page STARTS*/
+    /* A Card section STARTS*/
+    .case-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+    }
+
+    .a-card {
+        width: 49%;
+        transition: transform 0.4s;
+    }
+
+    .a-card:hover {
+        transform: scale(1.015);
+    }
+
+    .healthy {
+        max-width: 49%;
+    }
+
+    .heading-img {
+        position: absolute;
+        width: fit-content;
+        max-width: 60%;
+        bottom: 6vw;
+        left: 0vw;
+        padding-top: 0;
+        padding-left: 6vw;
+    }
+
+    .bold-text {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: "Playfair Display", serif;
+        line-height: 1;
+        font-style: normal;
+    }
+
+    .see-my-work-wrapper {
+        position: absolute;
+        bottom: 6vw;
+        right: 6vw;
+        flex-wrap: wrap;
+    }
+
+
+    /* Footer styling STARTS*/
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media (min-width: 75rem) {
+    .header-wrapper {
+        padding: 45px 0;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .hero-section-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        margin: 0 auto;
+    }
+
+
+
+    .padding-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cases-section {
+        padding: 0 0;
+    }
+}
+
+
+
+/* --------------------------------------------------------- Media styling ENDS ---------------------------------------------------------------------------*/
+
+
+/* ANDET */
+.text-and-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

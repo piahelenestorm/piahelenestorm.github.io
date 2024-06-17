@@ -1,0 +1,328 @@
+/*---------------------------------------------------- Horizontal moving words animation --------------------------------------------------*/
+/* https://www.youtube.com/watch?v=WFzquzZic2o */
+.scroll {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.scroll div {
+    white-space: nowrap;
+    animation: scroll 160s linear infinite;
+    animation-delay: calc(160s*-1);
+
+}
+
+.scroll div:nth-child(2) {
+    animation: scroll2 160s linear infinite;
+    animation-delay: calc(160s/-2);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.scroll div span {
+    display: inline-flex;
+    font-size: 1.05rem;
+    font-weight: 300;
+    margin: 10px 30px;
+    letter-spacing: 0.05em; 
+    padding: 5px 10px;
+    transition: 0.5s;
+    color: var(--text-color3);
+
+}
+
+
+/* ------------------------------------------------------Typewriter animations --------------------------------------------------*/
+/* https://www.youtube.com/watch?v=R846J8LJ6os */
+.typewriter-text {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 26px 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+#typewriter {
+    font-style: italic;}
+#typewriter2 {
+    font-weight: 600;
+}
+#cursor {
+    color: var(--cursor-color);
+    font-size: 3rem;
+    font-size: inherit;
+    font-weight: normal;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+}
+
+/* RUTH CALENDAR ANIMATIONs*/
+.inline-block-class {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.word {
+    position: absolute;
+    width: 220px;
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.50s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.50s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+
+/* -------------------------------------------------------------Moving graident background -------------------------------------------------*/
+.a-gradient-layer-front {
+    /*     background-image: url(/images/background.jpeg);
+    background-size: 100% 100%;
+    object-fit: cover; */
+
+
+    /* https://codepen.io/P1N2O/pen/pyBNzX gradient by Manuel Pinto*/
+/*      background: var(--background-color);
+    background: linear-gradient(-60deg, #9198e5, #F2EDE8, #F2EDE8);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;  */
+
+    background-color: var(--background-color2);
+
+/*     height: fit-content;
+    background: #fff;
+    background: radial-gradient(at 18% 99%, #e3eeff 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 97% 8%, #fad0c4 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 79% 82%, #dad4ec 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 96% 10%, #a6c1ee 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 42% 20%, #f3e7e9 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 4% 49%, #d9ded8 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat scroll 0% 0%;
+    background-size: 200% 200%;
+    animation: gradient2 8s ease infinite; */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.gradient-box-background {
+    height: fit-content;
+    max-width: 100%;
+    background: var(--background-color);
+    background: radial-gradient(at 18% 99%, #e3eeff 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 97% 8%, #fad0c4 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 79% 82%, #dad4ec 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 96% 10%, #a6c1ee 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 42% 20%, #f3e7e9 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 4% 49%, #d9ded8 0px, transparent 50%) repeat scroll 0% 0%, rgba(0, 0, 0, 0) radial-gradient(at 57% 33%, rgb(218, 83, 228) 0px, #a299ff 50%) repeat scroll 0% 0%;
+    background-size: 200% 200%;
+    animation: gradient2 8s ease infinite;
+}
+
+.beige-box-background {
+    height: fit-content;
+    max-width: 100%;
+/*     background: var(--background-color);
+    background-image: url(/images/healthytogether/background.png); */
+    background-color: var(--background-color3);
+}
+
+@keyframes gradient2 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+@media (prefers-reduced-motion) {
+    @keyframes textRotation {
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    /* styles to apply if a user's device settings are set to reduced motion */
+    .a-gradient-layer-front {
+        background-image: url(/images/background.jpeg);
+        background-size: 100% 100%;
+        object-fit: cover;
+    }
+
+    .gradient-box-background {
+        height: fit-content;
+        max-width: 100%;
+        background: #E1DDDA;
+        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    }
+
+    .beige-box-background {
+        height: fit-content;
+        max-width: 100%;
+        background: #E1DDDA;
+        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    }
+
+    .scroll {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .scroll div {
+        white-space: nowrap;
+        animation: scroll 500s linear infinite;
+        animation-delay: calc(500s*-1);
+
+    }
+
+    .scroll div:nth-child(2) {
+        animation: scroll2 500s linear infinite;
+        animation-delay: calc(500s/-2);
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scroll2 {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+
+    .scroll div span {
+        display: inline-flex;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin: 10px 30px;
+        letter-spacing: 0.05em;
+        padding: 5px 10px;
+        transition: 0.5s;
+        color: var(--text-color3);
+    }
+
+    @media (min-width: 63.75rem) {
+        .scroll div span {
+            display: inline-flex;
+            font-size: 1.2rem;
+            color: var(--text-color3);
+            font-weight: 300;
+            margin: 10px 30px;
+            letter-spacing: 0.05em;
+            padding: 5px 10px;
+            transition: 0.5s;
+        }
+    }
+
+    #typewriter {
+        display: none;
+    }
+
+    #typewriter2 {
+        display: none;
+    }
+
+    .typewriter-text {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .typewriter-text2 {
+        display: none;
+    }
+
+    .typewriter-text:after {
+        visibility: visible;
+        position: absolute;
+        padding-top: 2rem;
+        top: 0;
+        left: 0;
+        content: "How do we design for busy parents?";
+    }
+
+    #cursor {
+        display: none;
+    }
+}
