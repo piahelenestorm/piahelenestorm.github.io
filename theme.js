@@ -3,7 +3,7 @@
 const btn = document.getElementById("modeToggle");
 const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
-const currentTheme = localStorage.getItem("theme");
+const currentTheme = sessionStorage.getItem("theme");
 
 if (currentTheme === "dark") {
   setDarkMode();
@@ -29,7 +29,7 @@ function setTheme() {
 
 function setDarkMode() {
   document.body.setAttribute("theme", "dark");
-  localStorage.setItem("theme", "dark");
+  sessionStorage.setItem("theme", "dark"); // Save to sessionStorage
 
   themeIcons.forEach((icon) => {
     icon.src = icon.getAttribute("src-dark");
@@ -38,10 +38,7 @@ function setDarkMode() {
 
 function setLightMode() {
   document.body.removeAttribute("theme");
-  localStorage.setItem("theme", "light");
+  sessionStorage.setItem("theme", "light"); // Save to sessionStorage
 
   themeIcons.forEach((icon) => {
-    icon.src = icon.getAttribute("src-light");
-  });
-}
-
+    icon.src = icon
